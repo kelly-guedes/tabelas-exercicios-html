@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Mescladas</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Tabelas HTML</h2>
+      <table
+        align="center"
+        border="3"
+        style="width: 500px; height: 100px; border-spacing: 3; font-size: 20px"
+      >
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr style="text-align: center">
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr style="text-align: right">
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div>
+      <table
+        align="center"
+        border="3"
+        style="width: 500px; height: 100px; border-spacing: 3; font-size: 20px"
+      >
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr style="text-align: center">
+          <td colspan="3">4</td>
+        </tr>
+        <tr style="text-align: right">
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div>
+      <table
+        align="center"
+        border="3"
+        style="width: 500px; height: 100px; border-spacing: 3; font-size: 20px"
+      >
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td rowspan="3" style="text-align: center">3</td>
+        </tr>
+        <tr style="text-align: center">
+          <td colspan="2" style="text-align: center">4</td>
+        </tr>
+        <tr style="text-align: right">
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <a href="./layout.html">Layout Tabela</a>
+  </footer>
+</html>
